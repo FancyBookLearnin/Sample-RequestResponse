@@ -1,4 +1,6 @@
-﻿namespace RequestService
+﻿using System;
+
+namespace RequestService
 {
     using System.Threading.Tasks;
     using MassTransit;
@@ -13,6 +15,7 @@
 
         public async Task Consume(ConsumeContext<ISimpleRequest> context)
         {
+            await Console.Out.WriteLineAsync("hello");
             _log.InfoFormat("Returning name for {0}", context.Message.CustomerId);
 
             context.Respond(new SimpleResponse
