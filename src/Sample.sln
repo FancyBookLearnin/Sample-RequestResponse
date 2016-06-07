@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.MessageTypes", "Sample.MessageTypes\Sample.MessageTypes.csproj", "{B857261C-0EC8-4D51-9577-E72908E7F9A6}"
 EndProject
@@ -15,6 +15,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{64E17E
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureClient", "AzureClient\AzureClient.csproj", "{9093A85B-B6CF-477D-97CC-053E84D886E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure", "Azure", "{BB7102CE-AB47-4A9F-8657-135CDD8D2D2F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Rabbit", "Rabbit", "{41666569-DCBF-4243-8004-B440B91B15F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureRequestService", "AzureRequestService\AzureRequestService.csproj", "{C928D9E2-26B3-4C57-B0E7-6C652EA4FA99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,8 +42,22 @@ Global
 		{7D22F0BF-A2F2-4DA3-A563-3DA36F37CC24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D22F0BF-A2F2-4DA3-A563-3DA36F37CC24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D22F0BF-A2F2-4DA3-A563-3DA36F37CC24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9093A85B-B6CF-477D-97CC-053E84D886E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9093A85B-B6CF-477D-97CC-053E84D886E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9093A85B-B6CF-477D-97CC-053E84D886E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9093A85B-B6CF-477D-97CC-053E84D886E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C928D9E2-26B3-4C57-B0E7-6C652EA4FA99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C928D9E2-26B3-4C57-B0E7-6C652EA4FA99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C928D9E2-26B3-4C57-B0E7-6C652EA4FA99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C928D9E2-26B3-4C57-B0E7-6C652EA4FA99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{660DD259-B525-448C-B621-417EFFC13615} = {41666569-DCBF-4243-8004-B440B91B15F4}
+		{7D22F0BF-A2F2-4DA3-A563-3DA36F37CC24} = {41666569-DCBF-4243-8004-B440B91B15F4}
+		{9093A85B-B6CF-477D-97CC-053E84D886E7} = {BB7102CE-AB47-4A9F-8657-135CDD8D2D2F}
+		{C928D9E2-26B3-4C57-B0E7-6C652EA4FA99} = {BB7102CE-AB47-4A9F-8657-135CDD8D2D2F}
 	EndGlobalSection
 EndGlobal
